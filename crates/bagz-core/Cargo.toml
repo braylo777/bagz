@@ -1,0 +1,12 @@
+[package]
+name = "bagz-core"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+description = "Domain logic for the BAGZ swipe-to-apply demo"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+thiserror = "1"
