@@ -1,0 +1,13 @@
+[package]
+name = "bagz-web"
+version = "0.1.0"
+edition.workspace = true
+rust-version.workspace = true
+publish.workspace = true
+description = "The BAGZ demo web app, embedded in Rust: export it as a static site or serve it locally"
+
+[dependencies]
+bagz-core = { path = "../bagz-core" }
+
+[dev-dependencies]
+sha2 = "0.10"
