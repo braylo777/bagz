@@ -4,6 +4,20 @@ dist
 dist-ssr
 *.local
 
+# Rust
+target/
+
+# Python
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.mypy_cache/
+.ruff_cache/
+*.so
+*.pyd
+
 # Logs
 logs
 *.log
