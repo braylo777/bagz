@@ -1,0 +1,22 @@
+[build-system]
+requires = ["maturin>=1.7,<2"]
+build-backend = "maturin"
+
+[project]
+name = "bagz"
+version = "0.1.0"
+description = "Python bindings for the BAGZ swipe-to-apply core"
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Rust",
+]
+
+[tool.maturin]
+manifest-path = "crates/bagz-py/Cargo.toml"
+module-name = "bagz"
+features = ["pyo3/extension-module"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
