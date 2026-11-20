@@ -1,0 +1,422 @@
+[
+  {
+    "id": "froth",
+    "title": "Barista",
+    "company": "Froth Club",
+    "pay": "$17.85/hr",
+    "area": "East Austin",
+    "mode": "Onsite",
+    "schedule": "Mornings",
+    "posted": "2d ago",
+    "applicants": "14 applied",
+    "size": "18 people",
+    "stage": "One shop",
+    "matchPct": 91,
+    "reasons": [
+      "You already open cafes before 8.",
+      "Food handler card is on the resume.",
+      "East Austin is a 2 mi bike."
+    ],
+    "skills": [
+      "Espresso",
+      "Register",
+      "Rush"
+    ],
+    "perks": [
+      "Tips",
+      "Shift meal",
+      "Playlist after 10"
+    ],
+    "reply": "Replies in 1 day",
+    "sends": "Tue\u2013Sat mornings, food handler ready",
+    "payScore": 62,
+    "growth": 40,
+    "vibe": 88,
+    "chase": 27846
+  },
+  {
+    "id": "rack",
+    "title": "Floor Stylist",
+    "company": "Second Rack",
+    "pay": "$16.40/hr",
+    "area": "South Congress",
+    "mode": "Onsite",
+    "schedule": "Weekends",
+    "posted": "5h ago",
+    "applicants": "9 applied",
+    "size": "6 people",
+    "stage": "One store",
+    "matchPct": 88,
+    "reasons": [
+      "Your outfit photos already sell the look.",
+      "Weekend hours are open.",
+      "South Congress is on your bus line."
+    ],
+    "skills": [
+      "Styling",
+      "Vintage",
+      "Sizing"
+    ],
+    "perks": [
+      "Commission",
+      "Staff discount",
+      "First pick"
+    ],
+    "reply": "Replies same day",
+    "sends": "Three outfit photos and weekend hours",
+    "payScore": 58,
+    "growth": 45,
+    "vibe": 80,
+    "chase": 20467
+  },
+  {
+    "id": "ping",
+    "title": "Social Coordinator",
+    "company": "Ping House",
+    "pay": "$46,250/yr",
+    "area": "Downtown",
+    "mode": "Hybrid",
+    "schedule": "Weekdays",
+    "posted": "1d ago",
+    "applicants": "36 applied",
+    "size": "40 people",
+    "stage": "Series A",
+    "matchPct": 86,
+    "reasons": [
+      "You run a group chat like a desk.",
+      "Two posts on the resume already got saves.",
+      "Hybrid matches two downtown days."
+    ],
+    "skills": [
+      "Social",
+      "Copy",
+      "Scheduling"
+    ],
+    "perks": [
+      "Hybrid",
+      "Transit pass",
+      "Gear stipend"
+    ],
+    "reply": "Replies in 3 days",
+    "sends": "Resume and two posts",
+    "payScore": 74,
+    "growth": 78,
+    "vibe": 70,
+    "chase": 46250
+  },
+  {
+    "id": "poster",
+    "title": "Junior Designer",
+    "company": "Poster Picnic",
+    "pay": "$52,480/yr",
+    "area": "East Austin",
+    "mode": "Onsite",
+    "schedule": "In studio",
+    "posted": "4d ago",
+    "applicants": "22 applied",
+    "size": "11 people",
+    "stage": "Studio",
+    "matchPct": 90,
+    "reasons": [
+      "Your posters look like their wall.",
+      "Portfolio link is already on the resume.",
+      "The studio is 1 mi away."
+    ],
+    "skills": [
+      "Posters",
+      "Type",
+      "Merch"
+    ],
+    "perks": [
+      "Print budget",
+      "Studio lunch",
+      "Friday crit"
+    ],
+    "reply": "Replies in 2 days",
+    "sends": "Resume and four portfolio links",
+    "payScore": 80,
+    "growth": 72,
+    "vibe": 84,
+    "chase": 52480
+  },
+  {
+    "id": "spoke",
+    "title": "Bike Courier",
+    "company": "Spoke Drop",
+    "pay": "$19.65/hr",
+    "area": "Central Austin",
+    "mode": "Onsite",
+    "schedule": "Your hours",
+    "posted": "3h ago",
+    "applicants": "7 applied",
+    "size": "30 riders",
+    "stage": "Local",
+    "matchPct": 84,
+    "reasons": [
+      "You ride this map every day.",
+      "Your bike is already listed.",
+      "You can start tomorrow."
+    ],
+    "skills": [
+      "Bike",
+      "Maps",
+      "Rush"
+    ],
+    "perks": [
+      "Tips",
+      "Flexible hours",
+      "Repair credit"
+    ],
+    "reply": "Replies in a few hours",
+    "sends": "Bike type and open hours",
+    "payScore": 70,
+    "growth": 55,
+    "vibe": 90,
+    "chase": 35763
+  },
+  {
+    "id": "latebird",
+    "title": "Event Host",
+    "company": "Latebird",
+    "pay": "$20.15/hr",
+    "area": "Rainey Street",
+    "mode": "Onsite",
+    "schedule": "Nights",
+    "posted": "6d ago",
+    "applicants": "19 applied",
+    "size": "25 people",
+    "stage": "Nightlife group",
+    "matchPct": 87,
+    "reasons": [
+      "You know who gets in.",
+      "Thu\u2013Sat nights are open.",
+      "Rainey is a 1 mi walk."
+    ],
+    "skills": [
+      "Door",
+      "Guest list",
+      "Crowd"
+    ],
+    "perks": [
+      "Shift drink",
+      "Tips",
+      "Same-week start"
+    ],
+    "reply": "Replies in 2 days",
+    "sends": "Thu\u2013Sat nights",
+    "payScore": 68,
+    "growth": 48,
+    "vibe": 86,
+    "chase": 18860
+  },
+  {
+    "id": "clip",
+    "title": "Content Intern",
+    "company": "Clip Candy",
+    "pay": "$21.40/hr",
+    "area": "Austin",
+    "mode": "Remote",
+    "schedule": "15 hrs",
+    "posted": "1d ago",
+    "applicants": "41 applied",
+    "size": "8 people",
+    "stage": "Seed",
+    "matchPct": 89,
+    "reasons": [
+      "Your cuts already get saves.",
+      "Two reel links are on the resume.",
+      "15 hrs fits the class week."
+    ],
+    "skills": [
+      "Reels",
+      "Cut",
+      "Captions"
+    ],
+    "perks": [
+      "Remote",
+      "Credit on posts",
+      "Gear loan"
+    ],
+    "reply": "Reviews Friday",
+    "sends": "Resume and two reel links",
+    "payScore": 66,
+    "growth": 82,
+    "vibe": 77,
+    "chase": 16692
+  },
+  {
+    "id": "dayglow",
+    "title": "Front Desk",
+    "company": "Dayglow Studio",
+    "pay": "$16.25/hr",
+    "area": "Hyde Park",
+    "mode": "Onsite",
+    "schedule": "Days",
+    "posted": "8d ago",
+    "applicants": "11 applied",
+    "size": "5 people",
+    "stage": "One studio",
+    "matchPct": 83,
+    "reasons": [
+      "You remember regulars.",
+      "Mornings are open this month.",
+      "Hyde Park is a 12 min bus."
+    ],
+    "skills": [
+      "Check-in",
+      "Names",
+      "Calendar"
+    ],
+    "perks": [
+      "Class credit",
+      "Quiet shifts",
+      "Snacks"
+    ],
+    "reply": "Replies in 4 days",
+    "sends": "Open mornings this month",
+    "payScore": 54,
+    "growth": 36,
+    "vibe": 74,
+    "chase": 23660
+  },
+  {
+    "id": "salsa",
+    "title": "Line Cook",
+    "company": "Salsa Shift",
+    "pay": "$18.90/hr",
+    "area": "East 6th",
+    "mode": "Onsite",
+    "schedule": "Nights",
+    "posted": "12h ago",
+    "applicants": "16 applied",
+    "size": "14 people",
+    "stage": "One kitchen",
+    "matchPct": 85,
+    "reasons": [
+      "You can hold a Friday line.",
+      "Food handler card is current.",
+      "East 6th is a 4 min walk."
+    ],
+    "skills": [
+      "Line",
+      "Tacos",
+      "Rush"
+    ],
+    "perks": [
+      "Staff meal",
+      "Tips",
+      "Night pay"
+    ],
+    "reply": "Replies next day",
+    "sends": "Nights and a food handler card",
+    "payScore": 64,
+    "growth": 42,
+    "vibe": 81,
+    "chase": 31450
+  },
+  {
+    "id": "lace",
+    "title": "Sales Associate",
+    "company": "Lace Theory",
+    "pay": "$16.75/hr",
+    "area": "The Domain",
+    "mode": "Onsite",
+    "schedule": "Part-time",
+    "posted": "1d ago",
+    "applicants": "28 applied",
+    "size": "22 people",
+    "stage": "Three stores",
+    "matchPct": 82,
+    "reasons": [
+      "You know the drop sizes.",
+      "Part-time hours match the resume.",
+      "Saturday drop days are free."
+    ],
+    "skills": [
+      "Sneakers",
+      "Sizing",
+      "Drops"
+    ],
+    "perks": [
+      "Bonus",
+      "Staff pair",
+      "Drop-day pay"
+    ],
+    "reply": "Replies in 2 days",
+    "sends": "Hours and drop-day availability",
+    "payScore": 57,
+    "growth": 60,
+    "vibe": 76,
+    "chase": 19162
+  },
+  {
+    "id": "quad",
+    "title": "Campus Ambassador",
+    "company": "Quad Notes",
+    "pay": "$22.80/hr",
+    "area": "West Campus",
+    "mode": "Onsite",
+    "schedule": "8 hrs",
+    "posted": "9h ago",
+    "applicants": "13 applied",
+    "size": "4 people",
+    "stage": "Campus",
+    "matchPct": 93,
+    "reasons": [
+      "You already have the group chat.",
+      "Class gaps fit an 8 hr week.",
+      "West Campus is where you are."
+    ],
+    "skills": [
+      "Tabling",
+      "Group chat",
+      "Events"
+    ],
+    "perks": [
+      "Flexible hours",
+      "Event tickets",
+      "Merch"
+    ],
+    "reply": "Replies same day",
+    "sends": "Class gaps and tabling times",
+    "payScore": 72,
+    "growth": 70,
+    "vibe": 92,
+    "chase": 9485
+  },
+  {
+    "id": "carton",
+    "title": "Junior Developer",
+    "company": "Carton Labs",
+    "pay": "$67,850/yr",
+    "area": "Downtown",
+    "mode": "Hybrid",
+    "schedule": "Full-time",
+    "posted": "3d ago",
+    "applicants": "54 applied",
+    "size": "35 people",
+    "stage": "Series A",
+    "matchPct": 88,
+    "reasons": [
+      "You ship React. They need that.",
+      "GitHub is on the resume.",
+      "Two downtown days fit the week."
+    ],
+    "skills": [
+      "React",
+      "TypeScript",
+      "Git"
+    ],
+    "perks": [
+      "Hybrid",
+      "Mentor",
+      "Lunch on studio days"
+    ],
+    "reply": "First round in 5 days",
+    "sends": "Resume and GitHub",
+    "payScore": 86,
+    "growth": 88,
+    "vibe": 64,
+    "chase": 67850
+  }
+]
