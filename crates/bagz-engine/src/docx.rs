@@ -321,8 +321,9 @@ pub fn extract_text(bytes: &[u8]) -> Result<Vec<String>> {
         let mut text = String::new();
         for seg in p.split("<w:t").skip(1) {
             if let Some(start) = seg.find('>') {
-                if let Some(end) = seg.find("</w:t>") {
-                    text.push_str(&crate::text::decode_entities(&seg[start + 1..end]));
+                let body = &seg[start + 1..];
+                if let Some(end) = body.find("</w:t>") {
+                    text.push_str(&crate::text::decode_entities(&body[..end]));
                 }
             }
         }
@@ -397,6 +398,13 @@ mod tests {
             &bytes[bytes.len() - 22..bytes.len() - 18],
             &[0x50, 0x4b, 0x05, 0x06]
         );
+    }
+
+    #[test]
+    fn malformed_document_xml_does_not_panic() {
+        let mut z = ZipWriter::default();
+        z.add("word/document.xml", b"<w:p><w:tx</w:t></w:p>");
+        assert_eq!(extract_text(&z.finish()).unwrap(), vec![String::new()]);
     }
 
     #[test]

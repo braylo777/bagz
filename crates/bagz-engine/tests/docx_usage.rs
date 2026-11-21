@@ -277,3 +277,12 @@ fn cli_usage_enable_status_export_disable() {
     assert!(!dir.join("usage.json").exists());
     let _ = std::fs::remove_dir_all(&dir);
 }
+
+#[test]
+fn usage_record_ignores_non_ascii_without_panic() {
+    let mut s = UsageState::default();
+    s.enable(1);
+    s.record("2026-ü1-01");
+    s.record("éééé");
+    assert!(s.months.len() <= 1);
+}

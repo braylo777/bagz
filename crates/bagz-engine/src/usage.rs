@@ -69,11 +69,14 @@ impl UsageState {
 
     /// Notes one run on `today` (`YYYY-MM-DD`). Does nothing while off.
     pub fn record(&mut self, today: &str) {
-        if !self.enabled || today.len() < 7 {
+        let Some(month) = today.get(..7) else {
+            return;
+        };
+        if !self.enabled {
             return;
         }
         self.runs += 1;
-        self.months.insert(today[..7].to_string());
+        self.months.insert(month.to_string());
         self.days.insert(today.to_string());
         while self.days.len() > DAY_WINDOW {
             let first = self.days.iter().next().cloned();
