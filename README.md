@@ -1,8 +1,94 @@
 # BAGZ
 
-Clickable demo of BAGZ, a swipe-to-apply job app. The repo is **pyCrust**: tracked source is Rust and Python only. The domain rules live in a Rust crate, Python calls that crate through a PyO3 module named `bagz`, and the web app ships from a Rust crate (`bagz-web`) that embeds the built page byte for byte.
+BAGZ is a swipe-to-apply job app. This repo holds two parts:
 
-The demo has **12 example jobs** and **five screens** (splash, swipe deck, chat, profile, and checkout). Companies, pay figures, and the seeker profile are examples. No accounts and no real payments.
+1. **`bagz-engine`** (new in 0.2.0): real job ingestion, six approval-gated agents, and ATS-safe `.docx` export.
+2. **The clickable demo**: 12 example jobs, five screens, served from Rust (`bagz-web`), with Python bindings (`bagz-py`).
+
+Tracked source is Rust and Python only. No npm.
+
+## Numbers you can rerun
+
+`metrics.json` holds the current figures. Every value is measured by `cargo run --bin metrics`:
+
+| Field | Source |
+| --- | --- |
+| `jobs_indexed` | `report.indexed` in `data/ingest-run.json`, written by the last live `bagz ingest` run |
+| `agents` | length of `bagz_engine::agents::REGISTRY` |
+| `tests`, `tests_passing` | a fresh `cargo llvm-cov --workspace` (or `cargo test`) run |
+| `loc_rust` | non-blank, non-comment `.rs` lines under `crates/`, generated files excluded |
+| `coverage` | line coverage from `cargo llvm-cov`; `null` with `--no-cov` |
+
+Recorded run on 2026-11-20: 59 public boards, 18,088 postings fetched, **14,228 indexed** after dedupe (3,860 duplicates removed), 0 boards failed, 38 s.
+
+## Engine quick start
+
+```bash
+cargo run --example demo                       # offline: fixtures + mock model, all six agents
+cargo run --bin bagz -- ingest                 # live: reads data/boards.txt, writes data/ and target/bagz/index.jsonl
+cargo run --bin bagz -- top -n 20              # rank the local index for the example profile
+cargo run --bin bagz -- top --profile me.json  # rank for your own profile (see Profile in src/profile.rs)
+cargo run --bin bagz -- docx-check resume.docx # print the text an ATS sees, and check the structure
+cargo run --bin metrics                        # regenerate metrics.json
+```
+
+### Ingestion
+
+| Source | Endpoint (public, no key) |
+| --- | --- |
+| Greenhouse | `boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true` |
+| Lever | `api.lever.co/v0/postings/{company}?mode=json` |
+| Ashby | `api.ashbyhq.com/posting-api/job-board/{name}?includeCompensation=true` |
+| Workable | `apply.workable.com/api/v1/widget/accounts/{subdomain}?details=true` |
+| RSS 2.0 | any feed URL (`Company: Role` titles are split) |
+
+Each posting becomes one `Posting` (`src/model.rs`): HTML removed, dates as `YYYY-MM-DD`, yearly salary when the feed states one.
+
+- **Dedupe** (`src/dedupe.rs`): same company + title + first location after normalization (`Acme Inc.` = `Acme`, `Sr.` = `Senior`), or the same canonical URL. The direct ATS copy wins over RSS, then the longer description, then the smaller id. The result does not depend on input order.
+- **Rank** (`src/rank.rs`): skills 40 %, title 25 %, location 15 %, recency 10 %, salary 10 %. Pure and deterministic.
+- A failing board is logged in the run report and does not stop the run.
+- `data/boards.txt` is the board list. `data/sample-snapshot.json` keeps 250 postings from the run (descriptions cut to 280 characters). The full index stays local in `target/bagz/index.jsonl`; its SHA-256 is in `data/ingest-run.json`.
+
+### Agents and the approval gate
+
+Every agent returns `Pending<T>`. Only `Pending::approve(name)` makes an `Approved<T>`, and it refuses an empty name. Export and tracker updates take `Approved<T>` only, so the compiler stops unapproved output. **No code path submits an application or sends an email.**
+
+| Agent | Does | Model |
+| --- | --- | --- |
+| `scorer` | Computes the fit score and proposes apply, maybe, or skip. The model only writes the one-line reason. | yes |
+| `resume_tailor` | Moves matching skills and bullets first. Never adds a skill, role, or bullet. | yes (summary) |
+| `cover_letter` | Drafts a letter. Refuses drafts outside 30–450 words, with placeholders, without the company name, or with skills the profile lacks. | yes |
+| `form_prefill` | Maps the profile onto each ATS's own field names. Work authorization, sponsorship and EEO always go to the human. | no |
+| `receipt_tracker` | Reads confirmation and status emails and proposes status changes. Statuses only move forward. | no |
+| `follow_up` | Finds applications with no news after 7 days and drafts one short note. | yes |
+
+Model calls go through the `Llm` trait (`src/llm.rs`). `MockLlm` is deterministic and offline; tests and the demo use it. `AnthropicLlm` reads `ANTHROPIC_API_KEY` from the environment at call time.
+
+### ATS-safe .docx
+
+`src/docx.rs` writes Word files with no dependencies: one column, no tables, text boxes, images, headers or footers, standard headings (`Summary`, `Skills`, `Experience`, `Education`), Calibri, and `•` bullets as plain text. Same input gives the same bytes. `ats_violations` and `extract_text` check a file the way an ATS reads it.
+
+### Opt-in usage counter
+
+Off by default. While off, nothing is written.
+
+```bash
+cargo run --bin bagz -- usage enable    # random install id + months/days used, stored in ~/.bagz/usage.json
+cargo run --bin bagz -- usage export    # prints the small JSON report; you decide whether to share it
+cargo run --bin bagz -- usage disable   # deletes the file
+```
+
+It never sends data. `usage::monthly_active` counts MAU across reports that users chose to share.
+
+### Tests
+
+- Golden files per ATS parser: `tests/golden/*.json` (regenerate with `BAGZ_UPDATE_GOLDEN=1 cargo test`).
+- Recorded HTTP: `tests/fixtures/http/` with fictional companies. `FixtureClient` errors on any URL it did not record, so tests never reach the network.
+- Property tests (`proptest`): parsers never panic, dedupe is idempotent and order-independent, rank is sorted and bounded, `.docx` and zip round-trip, the approval queue decides each proposal once.
+
+## Demo app
+
+The clickable demo has **12 example jobs** and **five screens** (splash, swipe deck, chat, profile, and checkout). Companies, pay figures, and the seeker profile are examples. No accounts and no real payments.
 
 Live: https://bagz-demo.braylo777.workers.dev
 
@@ -23,6 +109,8 @@ crates/bagz-core            job model, validation, swipe deck, score, filters
 
 | Path | Role |
 | --- | --- |
+| `crates/bagz-engine` | Ingestion, dedupe, ranking, six agents, approval gate, `.docx` export, usage counter, `bagz` and `metrics` binaries. |
+| `data/` | Board list, last ingest run manifest, 250-posting sample snapshot. |
 | `crates/bagz-web` | The web app embedded in Rust: `serve` and `export` binaries, SHA-256 checked. |
 | `scripts/embed_web.py` | Regenerates `bagz-web/src/bundle.rs` from a built bundle. |
 | `src/data/jobs.json` | The 12 example jobs. Rust reads this file. It is not copied into a second catalog. |
@@ -98,9 +186,10 @@ applied = deck.applied()  # newest first
 
 ## CI
 
-`.github/workflows/ci.yml` runs two jobs on pull requests and on pushes to `main`:
+`.github/workflows/ci.yml` runs three jobs on pull requests and on pushes to `main`:
 
-- `cargo fmt --all --check`, `cargo clippy --workspace --all-targets -- -D warnings`, and `cargo test --workspace`
+- `cargo fmt --all --check`, `cargo clippy --workspace --all-targets -- -D warnings`, `cargo test --workspace`, and `cargo run --example demo`
+- `cargo llvm-cov` coverage plus `cargo run --bin metrics`; `lcov.info` and `metrics.json` are uploaded as artifacts
 - `maturin build --release`, install the wheel, and `pytest`
 
-CI does not deploy.
+CI does not deploy and does not reach job boards: every test uses recorded fixtures.

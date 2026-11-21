@@ -1,0 +1,8 @@
+{
+  "jobs_indexed": 14228,
+  "agents": 6,
+  "tests": 207,
+  "tests_passing": 207,
+  "loc_rust": 7205,
+  "coverage": 85.9
+}
