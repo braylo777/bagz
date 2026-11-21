@@ -1,0 +1,37 @@
+{
+  "name": "Umbrella Health",
+  "description": "Example company for tests.",
+  "jobs": [
+    {
+      "title": "Machine Learning Engineer",
+      "shortcode": "AB12CD34EF",
+      "code": "",
+      "employment_type": "Full-time",
+      "telecommuting": true,
+      "department": "AI",
+      "url": "https://apply.workable.com/j/AB12CD34EF",
+      "shortlink": "https://apply.workable.com/j/AB12CD34EF",
+      "application_url": "https://apply.workable.com/j/AB12CD34EF/apply",
+      "published_on": "2026-11-18",
+      "created_at": "2026-11-17",
+      "country": "France",
+      "city": "Paris",
+      "state": "Île-de-France",
+      "description": "<p>Train PyTorch models in Python. Salary: €60k to €80k.</p>"
+    },
+    {
+      "title": "Office Manager",
+      "shortcode": "ZZ99YY88XX",
+      "employment_type": "Part-time",
+      "telecommuting": false,
+      "department": "",
+      "url": "https://apply.workable.com/j/ZZ99YY88XX",
+      "application_url": "https://apply.workable.com/j/ZZ99YY88XX/apply",
+      "published_on": "",
+      "created_at": "2026-10-01",
+      "country": "Greece",
+      "city": "Athens",
+      "state": ""
+    }
+  ]
+}

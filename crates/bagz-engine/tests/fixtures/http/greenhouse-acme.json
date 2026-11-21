@@ -1,0 +1,52 @@
+{
+  "jobs": [
+    {
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/1001?gh_jid=1001",
+      "data_compliance": [{"type": "gdpr", "requires_consent": false}],
+      "internal_job_id": 501,
+      "location": {"name": "Austin, TX"},
+      "metadata": null,
+      "id": 1001,
+      "updated_at": "2026-11-12T10:00:00-05:00",
+      "requisition_id": "ENG-1",
+      "title": "Senior Backend Engineer",
+      "company_name": "Acme Robotics",
+      "first_published": "2026-11-10T09:00:00-05:00",
+      "language": "en",
+      "content": "&lt;div&gt;&lt;p&gt;Build &lt;strong&gt;Rust&lt;/strong&gt; services on AWS &amp;amp; Kubernetes.&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Kafka streams&lt;/li&gt;&lt;li&gt;PostgreSQL&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;The base salary range is $150,000 - $190,000.&lt;/p&gt;&lt;/div&gt;",
+      "departments": [{"id": 1, "name": "Engineering", "child_ids": [], "parent_id": null}],
+      "offices": [{"id": 2, "name": "Austin", "location": null}]
+    },
+    {
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/1002?gh_jid=1002",
+      "location": {"name": "Remote - US"},
+      "id": 1002,
+      "updated_at": "2026-11-01T10:00:00-05:00",
+      "title": "Product Designer",
+      "company_name": "Acme Robotics",
+      "content": "&lt;p&gt;Own design in Figma.&lt;/p&gt;",
+      "departments": []
+    },
+    {
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/1003",
+      "location": {"name": "Berlin, Germany • London, UK"},
+      "id": 1003,
+      "title": "Account Executive, DACH",
+      "content": "",
+      "departments": [{"id": 3, "name": "Sales"}]
+    },
+    {
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/1004",
+      "location": {"name": "Austin, TX"},
+      "id": 1004,
+      "title": "",
+      "content": "Untitled rows are skipped."
+    },
+    {
+      "absolute_url": "https://boards.greenhouse.io/acme/jobs/1005",
+      "location": {"name": "Austin, TX"},
+      "title": "No id rows are skipped"
+    }
+  ],
+  "meta": {"total": 5}
+}

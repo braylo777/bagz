@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+    <title>Remote Jobs (test feed)</title>
+    <link>https://feeds.example.test/remote.rss</link>
+    <item>
+      <title>Acme Robotics: Senior Backend Engineer</title>
+      <region>Austin, TX</region>
+      <category>Programming</category>
+      <type>Full-Time</type>
+      <description><![CDATA[<p>Same job as the Greenhouse listing, posted through an aggregator.</p>]]></description>
+      <pubDate>Mon, 10 Nov 2026 14:00:00 +0000</pubDate>
+      <guid>https://feeds.example.test/jobs/acme-backend</guid>
+      <link>https://feeds.example.test/jobs/acme-backend</link>
+    </item>
+    <item>
+      <title>Hooli: Staff Rust Engineer</title>
+      <region>Anywhere in the World</region>
+      <category>Programming</category>
+      <type>Contract</type>
+      <description>&lt;p&gt;Write &lt;b&gt;Rust&lt;/b&gt; &amp;amp; Go. Pay $180K - $220K.&lt;/p&gt;</description>
+      <pubDate>Wed, 19 Nov 2026 08:30:00 +0000</pubDate>
+      <guid>https://feeds.example.test/jobs/hooli-rust</guid>
+      <link>https://feeds.example.test/jobs/hooli-rust</link>
+    </item>
+    <item>
+      <title>Plain title without company</title>
+      <dc:creator>Vandelay Industries</dc:creator>
+      <link>https://feeds.example.test/jobs/vandelay</link>
+    </item>
+    <item>
+      <title></title>
+      <link>https://feeds.example.test/jobs/empty</link>
+    </item>
+  </channel>
+</rss>

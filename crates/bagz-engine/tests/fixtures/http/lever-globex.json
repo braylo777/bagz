@@ -1,0 +1,34 @@
+[
+  {
+    "additional": "<p>Benefits</p>",
+    "additionalPlain": "Benefits",
+    "categories": {"commitment": "Full-time", "department": "Engineering", "location": "New York, NY", "team": "Data Platform", "allLocations": ["New York, NY"]},
+    "createdAt": 1762905600000,
+    "descriptionPlain": "Globex builds data pipelines in   Python and Kafka.\nYou will run Spark jobs.",
+    "description": "<div>Globex builds data pipelines.</div>",
+    "id": "8c1e7f0a-0000-4000-8000-000000000001",
+    "lists": [{"text": "What you will do", "content": "<li>Ship</li>"}],
+    "text": "Data Engineer",
+    "country": "US",
+    "workplaceType": "hybrid",
+    "hostedUrl": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000001",
+    "applyUrl": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000001/apply",
+    "salaryRange": {"min": 130000, "max": 165000, "currency": "USD", "interval": "per-year-salary"}
+  },
+  {
+    "categories": {"commitment": "Part-time", "location": "Remote", "team": "Support"},
+    "createdAt": 1760000000000,
+    "description": "<p>Help customers &amp; partners.</p>",
+    "id": "8c1e7f0a-0000-4000-8000-000000000002",
+    "text": "Support Specialist",
+    "workplaceType": "remote",
+    "hostedUrl": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000002",
+    "applyUrl": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000002/apply",
+    "salaryRange": {"min": 22, "max": 28, "currency": "USD", "interval": "per-hour-wage"}
+  },
+  {
+    "categories": {},
+    "id": "8c1e7f0a-0000-4000-8000-000000000003",
+    "hostedUrl": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000003"
+  }
+]

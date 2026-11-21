@@ -1,0 +1,54 @@
+[
+  {
+    "id": "greenhouse:acme:1001",
+    "source": "greenhouse",
+    "board": "acme",
+    "company": "Acme Robotics",
+    "title": "Senior Backend Engineer",
+    "location": "Austin, TX",
+    "workplace": "onsite",
+    "department": "Engineering",
+    "employment_type": null,
+    "url": "https://boards.greenhouse.io/acme/jobs/1001?gh_jid=1001",
+    "apply_url": null,
+    "posted": "2026-11-10",
+    "salary": {
+      "min": 150000,
+      "max": 190000,
+      "currency": "USD"
+    },
+    "description": "Build Rust services on AWS & Kubernetes.\nKafka streams\nPostgreSQL\nThe base salary range is $150,000 - $190,000."
+  },
+  {
+    "id": "greenhouse:acme:1002",
+    "source": "greenhouse",
+    "board": "acme",
+    "company": "Acme Robotics",
+    "title": "Product Designer",
+    "location": "Remote - US",
+    "workplace": "remote",
+    "department": null,
+    "employment_type": null,
+    "url": "https://boards.greenhouse.io/acme/jobs/1002?gh_jid=1002",
+    "apply_url": null,
+    "posted": "2026-11-01",
+    "salary": null,
+    "description": "Own design in Figma."
+  },
+  {
+    "id": "greenhouse:acme:1003",
+    "source": "greenhouse",
+    "board": "acme",
+    "company": "acme",
+    "title": "Account Executive, DACH",
+    "location": "Berlin, Germany • London, UK",
+    "workplace": "onsite",
+    "department": "Sales",
+    "employment_type": null,
+    "url": "https://boards.greenhouse.io/acme/jobs/1003",
+    "apply_url": null,
+    "posted": null,
+    "salary": null,
+    "description": ""
+  }
+]

@@ -1,0 +1,38 @@
+[
+  {
+    "id": "lever:globex:8c1e7f0a-0000-4000-8000-000000000001",
+    "source": "lever",
+    "board": "globex",
+    "company": "Globex",
+    "title": "Data Engineer",
+    "location": "New York, NY",
+    "workplace": "hybrid",
+    "department": "Engineering",
+    "employment_type": "Full-time",
+    "url": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000001",
+    "apply_url": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000001/apply",
+    "posted": "2025-11-12",
+    "salary": {
+      "min": 130000,
+      "max": 165000,
+      "currency": "USD"
+    },
+    "description": "Globex builds data pipelines in Python and Kafka. You will run Spark jobs."
+  },
+  {
+    "id": "lever:globex:8c1e7f0a-0000-4000-8000-000000000002",
+    "source": "lever",
+    "board": "globex",
+    "company": "Globex",
+    "title": "Support Specialist",
+    "location": "Remote",
+    "workplace": "remote",
+    "department": "Support",
+    "employment_type": "Part-time",
+    "url": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000002",
+    "apply_url": "https://jobs.lever.co/globex/8c1e7f0a-0000-4000-8000-000000000002/apply",
+    "posted": "2025-10-09",
+    "salary": null,
+    "description": "Help customers & partners."
+  }
+]

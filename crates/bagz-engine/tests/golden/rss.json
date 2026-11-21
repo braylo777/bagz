@@ -1,0 +1,54 @@
+[
+  {
+    "id": "rss:feeds.example.test:https://feeds.example.test/jobs/acme-backend",
+    "source": "rss",
+    "board": "feeds.example.test",
+    "company": "Acme Robotics",
+    "title": "Senior Backend Engineer",
+    "location": "Austin, TX",
+    "workplace": "unknown",
+    "department": "Programming",
+    "employment_type": "Full-Time",
+    "url": "https://feeds.example.test/jobs/acme-backend",
+    "apply_url": null,
+    "posted": "2026-11-10",
+    "salary": null,
+    "description": "Same job as the Greenhouse listing, posted through an aggregator."
+  },
+  {
+    "id": "rss:feeds.example.test:https://feeds.example.test/jobs/hooli-rust",
+    "source": "rss",
+    "board": "feeds.example.test",
+    "company": "Hooli",
+    "title": "Staff Rust Engineer",
+    "location": "Anywhere in the World",
+    "workplace": "remote",
+    "department": "Programming",
+    "employment_type": "Contract",
+    "url": "https://feeds.example.test/jobs/hooli-rust",
+    "apply_url": null,
+    "posted": "2026-11-19",
+    "salary": {
+      "min": 180000,
+      "max": 220000,
+      "currency": "USD"
+    },
+    "description": "Write Rust & Go. Pay $180K - $220K."
+  },
+  {
+    "id": "rss:feeds.example.test:https://feeds.example.test/jobs/vandelay",
+    "source": "rss",
+    "board": "feeds.example.test",
+    "company": "Vandelay Industries",
+    "title": "Plain title without company",
+    "location": "",
+    "workplace": "unknown",
+    "department": null,
+    "employment_type": null,
+    "url": "https://feeds.example.test/jobs/vandelay",
+    "apply_url": null,
+    "posted": null,
+    "salary": null,
+    "description": ""
+  }
+]

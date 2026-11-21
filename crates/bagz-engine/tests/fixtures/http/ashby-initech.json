@@ -1,0 +1,48 @@
+{
+  "apiVersion": "1",
+  "jobs": [
+    {
+      "id": "3f0d1c2e-0000-4000-8000-00000000a001",
+      "title": "Software Engineer, Infrastructure",
+      "department": "Engineering",
+      "team": "Infra",
+      "employmentType": "FullTime",
+      "location": "San Francisco, CA",
+      "secondaryLocations": [],
+      "publishedAt": "2026-11-15T19:16:55.670+00:00",
+      "isListed": true,
+      "isRemote": true,
+      "workplaceType": "Hybrid",
+      "jobUrl": "https://jobs.ashbyhq.com/initech/3f0d1c2e-0000-4000-8000-00000000a001",
+      "applyUrl": "https://jobs.ashbyhq.com/initech/3f0d1c2e-0000-4000-8000-00000000a001/application",
+      "descriptionPlain": "Run Kubernetes and Terraform for Initech.",
+      "compensation": {
+        "compensationTierSummary": "$140K – $210K • Offers Equity",
+        "compensationTiers": [
+          {"components": [
+            {"compensationType": "Salary", "interval": "1 YEAR", "currencyCode": "USD", "minValue": 140000, "maxValue": 180000},
+            {"compensationType": "EquityPercentage", "interval": "NONE", "minValue": 0.01, "maxValue": 0.05}
+          ]},
+          {"components": [
+            {"compensationType": "Salary", "interval": "1 YEAR", "currencyCode": "USD", "minValue": 160000, "maxValue": 210000}
+          ]}
+        ]
+      }
+    },
+    {
+      "id": "3f0d1c2e-0000-4000-8000-00000000a002",
+      "title": "Hidden Role",
+      "isListed": false,
+      "jobUrl": "https://jobs.ashbyhq.com/initech/hidden"
+    },
+    {
+      "id": "3f0d1c2e-0000-4000-8000-00000000a003",
+      "title": "Recruiter",
+      "location": "Remote",
+      "isListed": true,
+      "isRemote": true,
+      "jobUrl": "https://jobs.ashbyhq.com/initech/3f0d1c2e-0000-4000-8000-00000000a003",
+      "descriptionHtml": "<p>Hire great people.</p>"
+    }
+  ]
+}

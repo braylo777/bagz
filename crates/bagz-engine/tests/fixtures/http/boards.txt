@@ -1,0 +1,7 @@
+greenhouse:acme
+lever:globex
+ashby:initech
+workable:umbrella
+rss:https://feeds.example.test/remote.rss
+# not recorded: must fail without touching the network
+greenhouse:not-recorded

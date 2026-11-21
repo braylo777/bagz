@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
-members = ["crates/bagz-core", "crates/bagz-py", "crates/bagz-web"]
+members = ["crates/bagz-core", "crates/bagz-engine", "crates/bagz-py", "crates/bagz-web"]
 
 [workspace.package]
 edition = "2021"

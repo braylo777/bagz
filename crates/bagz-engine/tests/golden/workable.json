@@ -1,0 +1,38 @@
+[
+  {
+    "id": "workable:umbrella:AB12CD34EF",
+    "source": "workable",
+    "board": "umbrella",
+    "company": "Umbrella Health",
+    "title": "Machine Learning Engineer",
+    "location": "Paris, Île-de-France, France",
+    "workplace": "remote",
+    "department": "AI",
+    "employment_type": "Full-time",
+    "url": "https://apply.workable.com/j/AB12CD34EF",
+    "apply_url": "https://apply.workable.com/j/AB12CD34EF/apply",
+    "posted": "2026-11-18",
+    "salary": {
+      "min": 60000,
+      "max": 80000,
+      "currency": "EUR"
+    },
+    "description": "Train PyTorch models in Python. Salary: €60k to €80k."
+  },
+  {
+    "id": "workable:umbrella:ZZ99YY88XX",
+    "source": "workable",
+    "board": "umbrella",
+    "company": "Umbrella Health",
+    "title": "Office Manager",
+    "location": "Athens, Greece",
+    "workplace": "onsite",
+    "department": null,
+    "employment_type": "Part-time",
+    "url": "https://apply.workable.com/j/ZZ99YY88XX",
+    "apply_url": "https://apply.workable.com/j/ZZ99YY88XX/apply",
+    "posted": "2026-10-01",
+    "salary": null,
+    "description": ""
+  }
+]

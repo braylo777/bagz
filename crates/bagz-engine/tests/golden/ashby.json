@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ashby:initech:3f0d1c2e-0000-4000-8000-00000000a001",
+    "source": "ashby",
+    "board": "initech",
+    "company": "Initech",
+    "title": "Software Engineer, Infrastructure",
+    "location": "San Francisco, CA",
+    "workplace": "hybrid",
+    "department": "Engineering",
+    "employment_type": "FullTime",
+    "url": "https://jobs.ashbyhq.com/initech/3f0d1c2e-0000-4000-8000-00000000a001",
+    "apply_url": "https://jobs.ashbyhq.com/initech/3f0d1c2e-0000-4000-8000-00000000a001/application",
+    "posted": "2026-11-15",
+    "salary": {
+      "min": 160000,
+      "max": 210000,
+      "currency": "USD"
+    },
+    "description": "Run Kubernetes and Terraform for Initech."
+  },
+  {
+    "id": "ashby:initech:3f0d1c2e-0000-4000-8000-00000000a003",
+    "source": "ashby",
+    "board": "initech",
+    "company": "Initech",
+    "title": "Recruiter",
+    "location": "Remote",
+    "workplace": "remote",
+    "department": null,
+    "employment_type": null,
+    "url": "https://jobs.ashbyhq.com/initech/3f0d1c2e-0000-4000-8000-00000000a003",
+    "apply_url": null,
+    "posted": null,
+    "salary": null,
+    "description": "Hire great people."
+  }
+]
