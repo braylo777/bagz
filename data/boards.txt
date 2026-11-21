@@ -1,0 +1,71 @@
+# Public job boards read by `cargo run --bin bagz -- ingest`.
+# One `source:token` per line. Tokens are public board names; no keys needed.
+
+# Greenhouse Job Board API
+greenhouse:affirm
+greenhouse:airbnb
+greenhouse:andurilindustries
+greenhouse:anthropic
+greenhouse:asana
+greenhouse:block
+greenhouse:brex
+greenhouse:carta
+greenhouse:chime
+greenhouse:cloudflare
+greenhouse:coinbase
+greenhouse:databricks
+greenhouse:datadog
+greenhouse:discord
+greenhouse:dropbox
+greenhouse:duolingo
+greenhouse:elastic
+greenhouse:faire
+greenhouse:figma
+greenhouse:flexport
+greenhouse:gitlab
+greenhouse:grafanalabs
+greenhouse:gusto
+greenhouse:hellofresh
+greenhouse:hubspotjobs
+greenhouse:instacart
+greenhouse:intercom
+greenhouse:lyft
+greenhouse:mongodb
+greenhouse:nuro
+greenhouse:okta
+greenhouse:pinterest
+greenhouse:reddit
+greenhouse:robinhood
+greenhouse:roblox
+greenhouse:samsara
+greenhouse:scaleai
+greenhouse:spacex
+greenhouse:stripe
+greenhouse:toast
+greenhouse:twilio
+greenhouse:twitch
+greenhouse:waymo
+greenhouse:zscaler
+
+# Lever Postings API
+lever:palantir
+lever:spotify
+lever:zoox
+
+# Ashby Posting API
+ashby:clickhouse
+ashby:cohere
+ashby:notion
+ashby:openai
+ashby:ramp
+ashby:replit
+ashby:supabase
+
+# Workable widget API
+workable:blueground
+workable:huggingface
+workable:skroutz
+
+# RSS
+rss:https://weworkremotely.com/remote-jobs.rss
+rss:https://himalayas.app/jobs/rss

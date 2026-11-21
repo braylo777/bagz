@@ -1,0 +1,316 @@
+{
+  "boards_file": "data/boards.txt",
+  "index_sha256": "0a91a973371490e8b7861f7b2d8f110dc129684047b1b6445a037fa770dfa7f0",
+  "report": {
+    "boards": [
+      {
+        "board": "greenhouse:affirm",
+        "error": null,
+        "fetched": 222
+      },
+      {
+        "board": "greenhouse:airbnb",
+        "error": null,
+        "fetched": 202
+      },
+      {
+        "board": "greenhouse:andurilindustries",
+        "error": null,
+        "fetched": 2631
+      },
+      {
+        "board": "greenhouse:anthropic",
+        "error": null,
+        "fetched": 633
+      },
+      {
+        "board": "greenhouse:asana",
+        "error": null,
+        "fetched": 111
+      },
+      {
+        "board": "greenhouse:block",
+        "error": null,
+        "fetched": 184
+      },
+      {
+        "board": "greenhouse:brex",
+        "error": null,
+        "fetched": 249
+      },
+      {
+        "board": "greenhouse:carta",
+        "error": null,
+        "fetched": 80
+      },
+      {
+        "board": "greenhouse:chime",
+        "error": null,
+        "fetched": 80
+      },
+      {
+        "board": "greenhouse:cloudflare",
+        "error": null,
+        "fetched": 503
+      },
+      {
+        "board": "greenhouse:coinbase",
+        "error": null,
+        "fetched": 253
+      },
+      {
+        "board": "greenhouse:databricks",
+        "error": null,
+        "fetched": 897
+      },
+      {
+        "board": "greenhouse:datadog",
+        "error": null,
+        "fetched": 382
+      },
+      {
+        "board": "greenhouse:discord",
+        "error": null,
+        "fetched": 29
+      },
+      {
+        "board": "greenhouse:dropbox",
+        "error": null,
+        "fetched": 47
+      },
+      {
+        "board": "greenhouse:duolingo",
+        "error": null,
+        "fetched": 54
+      },
+      {
+        "board": "greenhouse:elastic",
+        "error": null,
+        "fetched": 382
+      },
+      {
+        "board": "greenhouse:faire",
+        "error": null,
+        "fetched": 74
+      },
+      {
+        "board": "greenhouse:figma",
+        "error": null,
+        "fetched": 147
+      },
+      {
+        "board": "greenhouse:flexport",
+        "error": null,
+        "fetched": 213
+      },
+      {
+        "board": "greenhouse:gitlab",
+        "error": null,
+        "fetched": 246
+      },
+      {
+        "board": "greenhouse:grafanalabs",
+        "error": null,
+        "fetched": 140
+      },
+      {
+        "board": "greenhouse:gusto",
+        "error": null,
+        "fetched": 82
+      },
+      {
+        "board": "greenhouse:hellofresh",
+        "error": null,
+        "fetched": 377
+      },
+      {
+        "board": "greenhouse:hubspotjobs",
+        "error": null,
+        "fetched": 141
+      },
+      {
+        "board": "greenhouse:instacart",
+        "error": null,
+        "fetched": 92
+      },
+      {
+        "board": "greenhouse:intercom",
+        "error": null,
+        "fetched": 120
+      },
+      {
+        "board": "greenhouse:lyft",
+        "error": null,
+        "fetched": 148
+      },
+      {
+        "board": "greenhouse:mongodb",
+        "error": null,
+        "fetched": 417
+      },
+      {
+        "board": "greenhouse:nuro",
+        "error": null,
+        "fetched": 105
+      },
+      {
+        "board": "greenhouse:okta",
+        "error": null,
+        "fetched": 373
+      },
+      {
+        "board": "greenhouse:pinterest",
+        "error": null,
+        "fetched": 174
+      },
+      {
+        "board": "greenhouse:reddit",
+        "error": null,
+        "fetched": 148
+      },
+      {
+        "board": "greenhouse:robinhood",
+        "error": null,
+        "fetched": 163
+      },
+      {
+        "board": "greenhouse:roblox",
+        "error": null,
+        "fetched": 260
+      },
+      {
+        "board": "greenhouse:samsara",
+        "error": null,
+        "fetched": 288
+      },
+      {
+        "board": "greenhouse:scaleai",
+        "error": null,
+        "fetched": 169
+      },
+      {
+        "board": "greenhouse:spacex",
+        "error": null,
+        "fetched": 2821
+      },
+      {
+        "board": "greenhouse:stripe",
+        "error": null,
+        "fetched": 778
+      },
+      {
+        "board": "greenhouse:toast",
+        "error": null,
+        "fetched": 327
+      },
+      {
+        "board": "greenhouse:twilio",
+        "error": null,
+        "fetched": 109
+      },
+      {
+        "board": "greenhouse:twitch",
+        "error": null,
+        "fetched": 50
+      },
+      {
+        "board": "greenhouse:waymo",
+        "error": null,
+        "fetched": 363
+      },
+      {
+        "board": "greenhouse:zscaler",
+        "error": null,
+        "fetched": 386
+      },
+      {
+        "board": "lever:palantir",
+        "error": null,
+        "fetched": 308
+      },
+      {
+        "board": "lever:spotify",
+        "error": null,
+        "fetched": 91
+      },
+      {
+        "board": "lever:zoox",
+        "error": null,
+        "fetched": 244
+      },
+      {
+        "board": "ashby:clickhouse",
+        "error": null,
+        "fetched": 205
+      },
+      {
+        "board": "ashby:cohere",
+        "error": null,
+        "fetched": 124
+      },
+      {
+        "board": "ashby:notion",
+        "error": null,
+        "fetched": 170
+      },
+      {
+        "board": "ashby:openai",
+        "error": null,
+        "fetched": 851
+      },
+      {
+        "board": "ashby:ramp",
+        "error": null,
+        "fetched": 187
+      },
+      {
+        "board": "ashby:replit",
+        "error": null,
+        "fetched": 38
+      },
+      {
+        "board": "ashby:supabase",
+        "error": null,
+        "fetched": 80
+      },
+      {
+        "board": "workable:blueground",
+        "error": null,
+        "fetched": 5
+      },
+      {
+        "board": "workable:huggingface",
+        "error": null,
+        "fetched": 10
+      },
+      {
+        "board": "workable:skroutz",
+        "error": null,
+        "fetched": 8
+      },
+      {
+        "board": "rss:https://weworkremotely.com/remote-jobs.rss",
+        "error": null,
+        "fetched": 97
+      },
+      {
+        "board": "rss:https://himalayas.app/jobs/rss",
+        "error": null,
+        "fetched": 20
+      }
+    ],
+    "by_source": {
+      "ashby": 1640,
+      "greenhouse": 11809,
+      "lever": 641,
+      "rss": 115,
+      "workable": 23
+    },
+    "duplicates_removed": 3860,
+    "fetched": 18088,
+    "indexed": 14228
+  },
+  "run_date": "2026-11-21",
+  "sample_size": 250,
+  "seconds": 38.0
+}
