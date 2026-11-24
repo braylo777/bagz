@@ -1,0 +1,7 @@
+{
+  // Static-assets Worker for the BAGZ clickable demo (https://bagz-demo.braylo777.workers.dev).
+  // Build: npm ci --ignore-scripts && npm run build. Deploy: wrangler deploy (from demo/).
+  "name": "bagz-demo",
+  "compatibility_date": "2026-11-19",
+  "assets": { "directory": "dist", "not_found_handling": "single-page-application" }
+}
